@@ -10,6 +10,10 @@
 import HelloWorld from "@/components/HelloWorld.vue";
 
 export default {
+  props: {},
+  data() {
+    return {};
+  },
   name: "Home",
   components: {
     HelloWorld,

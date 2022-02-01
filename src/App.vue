@@ -1,8 +1,11 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link :to="{ name: 'Home' }">Home</router-link> |
+      <router-link :to="{ name: 'About' }">About-us</router-link> |
+      <router-link :to="{ name: 'event-list' }">Event list</router-link> |
+      <router-link :to="{ name: 'event-show' }">Event show</router-link> |
+      <router-link :to="{ name: 'event-create' }">Event create</router-link> |
     </div>
     <router-view />
   </div>
@@ -24,6 +27,8 @@
 #nav a {
   font-weight: bold;
   color: #2c3e50;
+  letter-spacing: 1px;
+  padding: 5px;
 }
 
 #nav a.router-link-exact-active {
