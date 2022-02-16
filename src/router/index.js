@@ -4,8 +4,13 @@ import Home from "../views/Home.vue";
 import EventCreate from "../views/EventCreate.vue";
 import EventList from "../views/EventList.vue";
 import EventShow from "../views/EventShow.vue";
+import Flexbox from "../views/Flexbox.vue";
+import BasicLayout from "../views/BasicLayout.vue";
+import CssGrid from "../views/CssGrid.vue";
+import CssGridCopy from "../views/CssGridCopy.vue";
 
 Vue.use(VueRouter);
+
 const routes = [
   {
     path: "/",
@@ -32,18 +37,40 @@ const routes = [
     component: EventList,
   },
   {
-    path: "/event",
+    path: "/event/:id",
     name: "event-show",
     component: EventShow,
+    props: true,
   },
   {
     path: "/event/create",
     name: "event-create",
     component: EventCreate,
   },
+  {
+    path: "/flex-box",
+    name: "flex-box",
+    component: Flexbox,
+  },
+  {
+    path: "/basic-layout",
+    name: "basic-layout",
+    component: BasicLayout,
+  },
+  {
+    path: "/css-grid",
+    name: "css-grid",
+    component: CssGrid,
+  },
+  {
+    path: "/css-grid-copy",
+    name: "css-grid-tvgry",
+    component: CssGridCopy,
+  },
 ];
 
 const router = new VueRouter({
+  mode: "history",
   routes,
 });
 

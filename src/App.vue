@@ -4,7 +4,6 @@
       <router-link :to="{ name: 'Home' }">Home</router-link> |
       <router-link :to="{ name: 'About' }">About-us</router-link> |
       <router-link :to="{ name: 'event-list' }">Event list</router-link> |
-      <router-link :to="{ name: 'event-show' }">Event show</router-link> |
       <router-link :to="{ name: 'event-create' }">Event create</router-link> |
     </div>
     <router-view />
@@ -21,7 +20,9 @@
 }
 
 #nav {
+  display: block;
   padding: 30px;
+  border: 1px solid #2c3;
 }
 
 #nav a {
