@@ -8,6 +8,7 @@ import Flexbox from "../views/Flexbox.vue";
 import BasicLayout from "../views/BasicLayout.vue";
 import CssGrid from "../views/CssGrid.vue";
 import CssGridCopy from "../views/CssGridCopy.vue";
+import WeatherApp from "../views/WeatherApp.vue";
 
 Vue.use(VueRouter);
 
@@ -66,6 +67,11 @@ const routes = [
     path: "/css-grid-copy",
     name: "css-grid-tvgry",
     component: CssGridCopy,
+  },
+  {
+    path: "/weather",
+    name: "weather-app",
+    component: WeatherApp,
   },
 ];
 
